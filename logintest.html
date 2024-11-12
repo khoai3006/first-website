@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="lgstyle.css">
+    <title>Login/Sign Up - Mini GT</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Photo/Untitled.png" alt="Mini GT Logo" width="150" height="50">
+            </div>
+            
+            <button class="mobile-menu-btn" id="menuToggle">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#news" class="nav-link">News</a></li>
+                    <li><a href="#distributions" class="nav-link">Distributions</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="Photo/Black Label Invitational 2022 - Official Aftermovie _ 4K - Hartnett Media (1080p, h264, youtube).mp4" type="video/mp4">
+                <p>Your browser does not support the video tag.</p>
+            </video>
+        </div>
+        <div class="forms-container">
+            <div class="signin-signup">
+                <div id="loginSection">
+                    <div class="des">
+                        <h3>Login to Your Account</h3>
+                        <p>Welcome back! Please enter your credentials to access your account.</p>
+                    </div>
+
+                    <form class="login-form" id="loginForm">
+                        <div class="form-group">
+                            <input type="email" id="loginEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="loginPassword" placeholder="Password" required>
+                            <button type="button" class="toggle-password">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <label>
+                                    <input type="checkbox" id="rememberMeCheck">
+                                    Remember me
+                                </label>
+                            </div>
+                            <a href="#" class="forgot-password">Forgot Password?</a>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+
+                    <div class="social-login">
+                        <p>Or login with:</p>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+
+                    <div class="toggle-form">
+                        <p>Don't have an account?</p>
+                        <button id="showSignUp">Sign Up</button>
+                    </div>
+                </div>
+
+                <div id="signUpSection" style="display: none;">
+                    <div class="des">
+                        <h3>Create New Account</h3>
+                        <p>Join us! Please fill in your details to create an account.</p>
+                    </div>
+
+                    <form class="signup-form" id="signupForm">
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <div class="form-group">
+                            <input type="password" id="signupPassword" placeholder="Password" required>
+                            <div class="password-strength-meter">
+                                <div class="strength-bar"></div>
+                                <p class="strength-text">Password Strength: <span>None</span></p>
+                            </div>
+                        </div>
+                        <input type="password" placeholder="Confirm Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+
+                    <div class="toggle-form">
+                        <p>Already have an account?</p>
+                        <button id="showLogin">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
+
