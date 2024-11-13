@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward,person" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <!-- Thêm Font Awesome -->
+        
+        <div class="logo">
+            <img src="/Ảnh/LOGOMINI.png" alt="Mini GT Logo">
+        </div>
+        <nav>
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="product.html" class="nav-link">Products</a>
+            <a href="manage.html" class="nav-link">Manage</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+
+            <div class="search">
+                <input type="text" placeholder="Search products...">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <button id="cart-button" onclick="toggleCartModal()">
+                <i class="fas fa-shopping-cart"></i> Cart
+            </button>
+
+            <a href="login.html" class="user-icon">
+                <span class="material-symbols-rounded">person</span>
+            </a>
+            
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <h1 class="main-title">Welcome to MINITIRES</h1>
+        <p class="subtitle">Discover Our Premium Collection of Die-cast Models</p>
+        <a href="#products" class="cta-button">Explore Now</a>
+    </div>
+
+    <div class="body">
+        <div class="video-container">
+            <video src="/Video/MINIGT - Made with Clipchamp.mp4" autoplay muted loop controls></video>
+        </div>
+
+        <div  class="body1">
+            <div class="section-header">
+                <h2 class="section-title">TOP Products</h2>
+                <p class="section-subtitle">Our most popular die-cast models</p>
+            </div>
+            <div class="container1 swiper">
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/Ảnh//P1.jpg" alt="Card Image" class="card-image">
+                            <p class="badge">Ford</p>
+                            <h2 class="card-title">MINIGT 1:64 S680 Blue Silver Alloy Car Model 516#.</h2>
+                            <button class=" card-button material-symbols-rounded">arrow_forward</button>
+ 
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/Ảnh/P2.jpg" alt="Card Image" class="card-image">
+                            <p class="badge">Lamborghini</p>
+                            <h2 class="card-title">TSM MINI GT 1:64 #268 Ford Mustang Shelby GT500 Ford Performance Blue Diecast Model</h2>
+                            <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/Ảnh/P3.jpg" alt="Card Image" class="card-image">
+                            <p class="badge">Ford</p>
+                            <h2 class="card-title">Mini GT Pandem Toyota GR Supra V1.0 - MGT00424 1:64 Diecast Car Model</h2>
+                            <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/Ảnh/P4.jpg" alt="Card Image" class="card-image">
+                            <p class="badge">Bugatti</p>
+                            <h2 class="card-title">Mini gt 1:64 NISSAN GT-R #182 Collection die cast alloy car model decoration gift</h2>
+                            <button class=" card-button material-symbols-rounded">arrow_forward</button>
+ 
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/Ảnh/P5.jpg" alt="Card Image" class="card-image">
+                            <p class="badge">Lamborghini</p>
+                            <h2 class="card-title">MINI GT Ford 269 LM Gulf Oil Gulf US MIJO Model 2022 MIJO k2029 Alloy car model Collection pendant.</h2>
+                            <button class=" card-button material-symbols-rounded">arrow_forward</button>
+ 
+                        </a>
+                    </li>
+
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="/Ảnh/P6.jpg" alt="Card Image" class="card-image">
+                            <p class="badge">McLaren</p>
+                            <h2 class="card-title">MINI GT 1:64 M4 GT3 #24 Equipe RLL 2022</h2>
+                            <button class=" card-button material-symbols-rounded">arrow_forward</button>
+ 
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </div>
+        </div>
+        
+
+        <div class="news-section">
+            
+            <div class="container container-tsm">
+                <div class="row">
+                    <div class="news-wrap">
+
+                        <div class="section-header1">
+                            <h2 class="section-title1">Latest News</h2>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Wednesday, October 02nd, 2024</span>
+                                    </div>
+
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=199">New MINI GT Distributor - Brasil</a>
+                                    <p class="m-0">MgMinis DieCast Importações e Exportações LTDA
+                                                    WebSite : www.minigtbrasil.com.br
+                                                    E-mail.: Vendas@minigtbrasil.com.br 
+                                                    Instagram: @minigtnobrasil</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Friday, September 27th, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=196">MINI GT x Tsugio Matsuda: A Special Collection Honoring a Motorsport Icon</a>
+                                    <p class="m-0">As we approach the grand celebration of NISMO's 40th anniversary, MINI GT is thrilled to announce an exclusive partnership with one of the most iconic drivers in modern NISMO racing history, Tsugio Matsuda. A two-time Super GT GT500 Champion and the record-holder with 25 Super GT race wins, Matsuda's legacy is celebrated through this special collection.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Wednesday, August 28th, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=198">Los Angeles Diecast Club presented by Kaido House | MINI GT at Petersen Museum</a>
+                                    <p class="m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Tuesday, August 27th, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=197">MINI GT 1/64 James Bond model car collection: the iconic Aston Martin DB5 from the James Bond film “Goldfinger.”</a>
+                                    <p class="m-0">MINI GT Fans!
+                                                We are thrilled to present the first model of the MINI GT 1/64 James Bond model car collection: the iconic Aston Martin DB5 from the James Bond film “Goldfinger.”
+                                                2024 marks the 60th anniversary of “Goldfinger.” This model is faithfully reproduced and features the famous gadgets and weapons from the movie.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Tuesday, August 27th, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=194">MINI GT event at Petersen Automotive Museum in October 2024</a>
+                                    <p class="m-0">Mark your calendars for Sunday, October 6, 2024, at the Petersen Museum. Come check out our latest samples, meet our partners, or just chill and hang out with us.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Saturday, August 24th, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=193">VeilSide x MINI GT</a>
+                                    <p class="m-0">We are excited to announce that MINI GT has officially partnered with VeilSide Co., Ltd., the legendary Japanese tuning company, as their official model car partner!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Sunday, July 28th, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=195">RE Amemiya x MINI GT</a>
+                                    <p class="m-0">We are thrilled to announce that MINI GT has partnered with the legendary rotary tuning brand RE Amemiya! This exciting collaboration unites two iconic names in the automotive world, promising unparalleled products and experiences for enthusiasts and collectors alike.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Monday, July 22nd, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=192">Issues on MGT00698</a>
+                                    <p class="m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Tuesday, July 16th, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=191">Announcing the Winners of the MINI GT 2024 Christmas Model Livery Design Contest!</a>
+                                    <p class="m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="position-relative">
+                                <div class="position-relative news_box">
+                                    <div class="mb-2" style="font-size: 14px;">
+                                        <span>Monday, July 01st, 2024</span>
+                                    </div>
+                                    <a class="h5" href="index.php?action=news-detail&amp;id=190">MINI GT  2024 Christmas Model Design Contest</a>
+                                    <p class="m-0">Calling all MINI GT fans! Do you have a passion for MINI GT model cars and dream of seeing your design made into a MINI GT model? MINI GT invites you to participate in our 2024 Christmas Model Car Design Contest! Here’s your chance to see your creative vision brought to life on a MINI GT diecast model. Follow these guidelines to submit your entry and potentially see your design become a reality!</p>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+    
+                    <div class="fb-wrap">
+                    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/MINIGTOFFICIAL/" data-tabs="timeline" data-width="" data-height="790" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=290&amp;height=790&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FMINIGTOFFICIAL%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width="><span style="vertical-align: bottom; width: 290px; height: 790px;"><iframe name="f4f2b83e14fa57233" width="1000px" height="790px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v14.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Dfba3e1c8db63690ce%26domain%3Dminigt.tsm-models.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fminigt.tsm-models.com%252Fffaa98dd9ca3673da%26relation%3Dparent.parent&amp;container_width=290&amp;height=790&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FMINIGTOFFICIAL%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=" style="border: none; visibility: visible; width: 290px; height: 790px;" class=""></iframe></span></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5 family_link">
+            <div class="container container-tsm">
+                <div class="row">
+                    <div class="col-12 row">
+                            <div class="family-link">
+                                    <a href="https://minigt.tsm-models.com/index.php?action=product-search&amp;keywords=imsa" class="figure"><img class="img-fluid" src="img/IMSA-Proud-Partner.jpg" alt=""></a>
+                            </div>
+                            <div class="family-link">
+                                    <a href="https://minigt.tsm-models.com/index.php?action=product-list&amp;b_id=21" class="figure"><img class="img-fluid" src="img/Kaido-House-x-MINI-GT.jpg" alt=""></a>
+                            </div>
+                            <div class="family-link">
+                               
+                                    <a href="https://minigt.tsm-models.com/index.php?action=product-list&amp;b_id=3" class="figure"><img class="img-fluid" src="img/MINI-GT-x-LB.jpg" alt=""></a>
+                            </div>
+                            <div class="family-link">
+                                    <a href="https://minigt.tsm-models.com/index.php?action=product-search&amp;keywords=super%20gt" class="figure"><img class="img-fluid" src="img/Super-GT.jpg" alt=""></a>
+                            </div>
+                    </div>
+                                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="top-section">
+             <div class="logo">
+              <img alt="MINI GT Logo" height="50" src="/Ảnh/LOGOMINI.png" width="100"/>
+             </div>
+             <div class="description">
+              MINI GT is a part of TSM family
+             </div>
+            </div>
+            <div class="links">
+             <div>
+              <h4>
+               Customer Service
+              </h4>
+              <a href="#">
+               Contact Us
+              </a>
+             </div>
+             <div>
+              <h4>
+               Website Information
+              </h4>
+              <a href="#">
+               About Us
+              </a>
+              <a href="#">
+               Product
+              </a>
+              <a href="#">
+               News
+              </a>
+              <a href="#">
+               Distribution
+              </a>
+             </div>
+             <div>
+              <h4>
+               Follow Us
+              </h4>
+              <div class="social">
+               <a href="#">
+                <i class="fab fa-facebook-f">
+                </i>
+               </a>
+               <a href="#">
+                <i class="fab fa-twitter">
+                </i>
+               </a>
+               <a href="#">
+                <i class="fab fa-instagram">
+                </i>
+               </a>
+              </div>
+             </div>
+            </div>
+            <div class="bottom">
+             <div>
+              <img alt="TSM Model Logo" height="50" src="https://storage.googleapis.com/a1aa/image/ferkHI0SUAmfZodoHuoINjKD8D0LhJ3lLpu3wZEjEvr1pleOB.jpg" width="100"/>
+             </div>
+             <div>
+              © 2024 MINIGT.com All Rights Reserved.
+              <span class="design">
+               Design by MAYA
+              </span>
+             </div>
+            </div>
+            <a class="back-to-top" href="#">
+             <i class="fas fa-chevron-up">
+             </i>
+            </a>
+           </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

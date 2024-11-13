@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginSection = document.getElementById('loginSection');
     const signUpSection = document.getElementById('signUpSection');
     const loginForm = document.getElementById('loginForm');
-    const signupForm = document.getElementById('signupForm');
     const showSignUpBtn = document.getElementById('showSignUp');
     const showLoginBtn = document.getElementById('showLogin');
     const loginEmail = document.getElementById('loginEmail');
@@ -27,35 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('valid');
             loginButton.disabled = false;
         }
-    });
-
-    // Password strength checker
-    function checkPasswordStrength(password) {
-        let strength = 0;
-        if (password.length >= 8) strength++;
-        if (password.match(/[A-Z]/)) strength++;
-        if (password.match(/[0-9]/)) strength++;
-        if (password.match(/[^A-Za-z0-9]/)) strength++;
-        return strength;
-    }
-
-    // Add password strength indicator
-    const strengthIndicator = document.createElement('div');
-    strengthIndicator.className = 'password-strength';
-    loginPassword.parentElement.appendChild(strengthIndicator);
-
-    function updatePasswordStrengthIndicator(strength) {
-        const messages = ['Weak', 'Fair', 'Good', 'Strong'];
-        const classes = ['strength-weak', 'strength-fair', 'strength-good', 'strength-strong'];
-        
-        strengthIndicator.className = 'password-strength ' + classes[strength - 1];
-        strengthIndicator.textContent = messages[strength - 1];
-    }
-
-    // Password strength event listener
-    loginPassword.addEventListener('input', function() {
-        const strength = checkPasswordStrength(this.value);
-        updatePasswordStrengthIndicator(strength);
     });
 
     // Handle "Remember Me"
