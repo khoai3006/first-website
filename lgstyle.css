@@ -185,6 +185,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 5rem;
 }
 
 .video-container {
@@ -207,11 +208,49 @@ body {
     z-index: 1;
     width: 50%;
     max-width: 500px;
-    padding: 2rem;
+    min-height: 500px;
+    margin-right: 2rem;
+    overflow: hidden;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+#loginSection, #signUpSection {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    padding: 2.5rem;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+#loginSection {
+    transform: translateX(0);
+    z-index: 2;
+}
+
+#signUpSection {
+    transform: translateX(100%);
+    z-index: 1;
+}
+
+/* Classes for sliding animation */
+#loginSection.slide-out {
+    transform: translateX(-100%);
+}
+
+#signUpSection.slide-in {
+    transform: translateX(0);
 }
 
 .signin-signup {
@@ -232,7 +271,8 @@ body {
 .signup-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 input {
@@ -263,33 +303,14 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.social-login {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.social-login p {
-    margin-bottom: 10px;
-}
-
-.social-login a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 24px;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-.social-login a:hover {
-    color: rgba(255, 255, 255, 0.7);
-}
-
 .toggle-form {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: auto;
+    padding-top: 1.5rem;
 }
 
 .toggle-form p {
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
@@ -297,7 +318,8 @@ button:hover {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
-    padding: 5px 10px;
+    padding: 8px 20px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
