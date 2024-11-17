@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (user) {
             // Login successful
             alert('Login successful!');
-            window.location.href = '/dashboard'; // Redirect to dashboard
+            window.location.href = '/home.html'; // Redirect to dashboard
         } else {
             alert('Invalid email or password');
         }
